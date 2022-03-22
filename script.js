@@ -1,6 +1,15 @@
 
 // Assignment code heres
-
+var passwordCapital = "";
+var passwordLowercase = "";
+var passwordNumeric = "";
+var passwordSpecial = "";
+var capital = "ABCDEFGHIJKLMNOPQURSTUVWXYZ";
+var lower = "abcdefghijklmnopqrstuvwxyz";
+var numeric = "1234567890";
+var special = "!@#$%^&*()_+-=[]{},./?";
+var passString = "";
+var passResult = "";
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
