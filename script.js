@@ -35,17 +35,25 @@ if (passwordLowercase === true) {
   }
 }
 
-// This statement alets if none of the variable were selected and goes back to the beginning of characterTyes function/
+// This statement else if none of the variable were selected and goes back to the beginning of characterTyes function/
 else {
   alert("Please choose at least one character type.")
 }
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var text = '';
+
+  // Function questions allows for the prompt to loop back if a value less than 8 or greater than 128 was chosen
+  function questions() {
+    var passwordLength = prompt("How long would you like your password to be? Please choose a number between 8 characters to 128 characters.");
+    if (parseInt(passwordLength) >= 8 && parseInt(passwordLength) <= 128) {
+      characterTypes()
+
+   for (let i = 0; i < passwordLength; i++)
+      
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
