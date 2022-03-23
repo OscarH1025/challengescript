@@ -10,6 +10,9 @@ var numeric = "1234567890";
 var special = "!@#$%^&*()_+-=[]{},./?";
 var passString = "";
 var passResult = "";
+//textArea display the password on screen//
+
+var textArea = document.getElementById("password")
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
