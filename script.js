@@ -14,6 +14,19 @@ var passResult = "";
 
 var textArea = document.getElementById("password")
 
+function characterTypes () {
+var passwordCapital = confirm ("would you like to include uppercase letters");
+var passwordLowercase = confirm ("would you like to include lowercase letters?");
+var passwordNumeric = confirm ("would like to include numbers?");
+var passwordCapital === true || passwordLowercase === true || passwordSpecial === true) {
+  if (passwordCapital === true) {
+    passString += capital
+  }
+
+  //if lowercase letters are picked, its added to the variable 'passString'
+}
+}
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
